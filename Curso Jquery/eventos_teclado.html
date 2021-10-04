@@ -1,0 +1,37 @@
+<script>
+    /*
+        keydown() -> acionado no momento em que uma tecla é pressionada (soltando-a ou não).
+        keypress() -> acionado no momento em que uma tecla é pressionada (soltando-a ou não), 
+            porém não captura todas as teclas, como por exemplo, alt, ctrl, esc, shift etc.
+        keyup() -> acionada no momento em que a tecla é liberada.
+    */
+
+    </script>
+    
+    <!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            
+            <title>Jquery Eventos - Teclado</title>
+    
+            <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+            
+            <script type="text/javascript">
+            
+                $(document).ready(function(){
+                    $('#campo1').keyup(function(){
+                         alert('Botão foi pressionado');
+                    });
+                });
+                
+    
+            </script>
+            
+        </head>
+    
+        <body>
+            <input id="campo1" type="text">
+        </body>
+    
+    </html>

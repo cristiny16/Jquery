@@ -1,0 +1,36 @@
+<script>
+/*
+    click() -> acionado no clique do mouse.
+    dbclick() -> acionado no clique duplo do mouse.
+    mousedown() -> acionado no clique do mouse (soltando ou não o botão).
+    mouseover() -> acionado quando o cursor do mouse sobrepõe o elemento da página.
+    mouseout() -> acionado quando o cursor do mouse sai da área de um elemento da página.
+*/
+</script>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Jquery Eventos - Mouse</title>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        
+        <script type="text/javascript">
+        
+            $(document).ready(function(){
+                $('#div1').dbclick(function(){
+                    alert('Elemento foi clicado');
+                });
+            });
+
+        </script>
+        
+    </head>
+
+    <body>
+        <div style="height: 150; width: 150px; background: #CCC;"></div>
+    </body>
+
+</html>
